@@ -88,3 +88,4 @@ variable "vpc_flow_log_sampling" {
 variable "restricted_api_list" {
   type = list(string)
 }
+
