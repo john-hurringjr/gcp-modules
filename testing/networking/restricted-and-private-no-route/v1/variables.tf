@@ -24,7 +24,7 @@ variable "project_id" {
 
 variable "network_name" {
   type        = string
-  default     = "rest-no-default"
+  default     = "rest-priv-no-default"
 }
 
 variable "logging_metadata" {
@@ -83,4 +83,8 @@ variable "vpc_flow_log_interval" {
 
 variable "vpc_flow_log_sampling" {
   default = 0.8
+}
+
+variable "restricted_api_list" {
+  type = list(string)
 }
