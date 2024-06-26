@@ -84,10 +84,3 @@ variable "vpc_flow_log_interval" {
 variable "vpc_flow_log_sampling" {
   default = 0.8
 }
-variable "cloud_router_asn_number_region_1" {
-  default = 4200000501
-}
-
-variable "cloud_router_asn_number_region_2" {
-  default = 4200000601
-}

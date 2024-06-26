@@ -88,11 +88,3 @@ variable "vpc_flow_log_sampling" {
 variable "restricted_api_list" {
   type = list(string)
 }
-
-variable "cloud_router_asn_number_region_1" {
-  default = 4200000501
-}
-
-variable "cloud_router_asn_number_region_2" {
-  default = 4200000601
-}
