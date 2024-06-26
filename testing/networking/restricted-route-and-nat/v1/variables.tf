@@ -24,7 +24,7 @@ variable "project_id" {
 
 variable "network_name" {
   type        = string
-  default     = "rest-nat"
+  default     = "rest-only"
 }
 
 variable "logging_metadata" {
