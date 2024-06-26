@@ -23,7 +23,7 @@ locals {
 resource "google_dns_record_set" "restricted_api_access_cname_record" {
   for_each = local.endpoint_map
   project       = var.project_id
-  name          = "${each.value}.googleapis.com."
+  name          = "${each.value}."
   managed_zone  = var.dns_zone_name
   type          = "CNAME"
   ttl           = 300
