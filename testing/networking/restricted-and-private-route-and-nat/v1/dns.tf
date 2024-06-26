@@ -4,7 +4,7 @@
 
 resource "google_dns_managed_zone" "googleapis_zone" {
   project     = var.project_id
-  name        = "googleapis-zone"
+  name        = "googleapis-zone-${random_string.random_string_for_api_zone.result}"
   dns_name    = "googleapis.com."
   description = "Google API Access"
   visibility  = "private"
