@@ -76,14 +76,6 @@ resource "google_dns_record_set" "restricted_gcr_io_cname_record" {
   rrdatas       = ["gcr.io."]
 }
 
-resource "random_string" "random_string_for_api_zone" {
-  length = 4
-  lower = true
-  upper = false
-  special = false
-  numeric = true
-}
-
 resource "random_string" "random_string_for_gcrio_zone" {
   length = 4
   lower = true
